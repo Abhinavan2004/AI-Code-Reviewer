@@ -1,7 +1,7 @@
 const express = require('express');
+const router = express.Router();
+const aiController = require("../controller/ai.controller")
 
-const router = express.router();
-
-router.get("./get-response" , aiController.getResponse);
+router.get("/get-response" , aiController.getResponse);
 
 module.exports = router ;
