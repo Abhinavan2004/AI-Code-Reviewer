@@ -1,0 +1,3 @@
+ther si sone package k/as AXIOS :- it helps in connecting the backemd of the project with the frontend of the project 
+
+thier is one package k/as CORS :- mtlb frontend se backend ko call krne ke liye permission deti hai bcoz backend kisiko apna code connection nhi krne deta hai 

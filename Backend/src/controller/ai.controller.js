@@ -1,11 +1,11 @@
 const generateContent = require('../services/ai.services');
 
-module.exports.getResponse = async (req , res) =>{
-    const prompt = req.query.prompt ;
-    if(!prompt){
+module.exports.getReview = async (req , res) =>{
+    const code = req.body.code ;
+    if(!code){
         return res.status(400).send("No Prompt Provided!! Please provide prompt.")
     }
-    const response = await generateContent(prompt);
+    const response = await generateContent(code);
 
     res.send(response);
 }
