@@ -4,7 +4,7 @@ const airoutes = require("../src/routes/ai.routes");
 const cors = require('cors');
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Your frontend origin
+  origin: 'https://ai-code-reviewer-nxde.onrender.com', // Your frontend origin
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
