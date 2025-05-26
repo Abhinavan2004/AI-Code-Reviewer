@@ -96,9 +96,11 @@ const CodeReviewer = () => {
     setError(null);
     setReview(null);
 
+    console.log('VITE_API_URL:', import.meta.env.VITE_API_URL);
+
     try {
       // Including explicit headers for CORS compatibility
-      const response = await axios.post('${import.meta.env.VITE_API_URL}/ai/get-review', {
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/ai/get-review`, {
         code,
         language
       }, {
